@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "ScanImage",
+  "version": "1.0",
+
+  "description": "Remove all images from a website",
+
+  "icons": {
+    "48": "icons/icon1.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"], //modify as needed
+      "js": ["readImage.js"]
+    }
+  ]
+
+}
